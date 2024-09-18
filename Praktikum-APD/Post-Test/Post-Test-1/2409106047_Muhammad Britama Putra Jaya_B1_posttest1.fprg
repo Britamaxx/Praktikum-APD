@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Flowchart APD 1"/>
+        <attribute name="authors" value="my asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-12 09:16:15 AM"/>
+        <attribute name="created" value="bXkgYXN1cztCUklUQU1BOzIwMjQtMDktMTI7MDc6NDU6MjUgQU07MjQ5MA=="/>
+        <attribute name="edited" value="bXkgYXN1cztCUklUQU1BOzIwMjQtMDktMTI7MDk6MTY6MTUgQU07MjsyNTk4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="totalbelanja, diskon, hargatotal" type="Integer" array="False" size=""/>
+            <input variable="totalbelanja"/>
+            <if expression="totalbelanja&gt;=1000000">
+                <then>
+                    <assign variable="diskon" expression="totalbelanja*20/100"/>
+                    <assign variable="hargatotal" expression="totalbelanja-diskon"/>
+                </then>
+                <else>
+                    <if expression="totalbelanja&gt;=500000">
+                        <then>
+                            <assign variable="diskon" expression="totalbelanja*10/100"/>
+                            <assign variable="hargatotal" expression="totalbelanja-diskon"/>
+                        </then>
+                        <else>
+                            <if expression="totalbelanja&gt;=100000">
+                                <then>
+                                    <assign variable="diskon" expression="totalbelanja*5/100"/>
+                                    <assign variable="hargatotal" expression="totalbelanja-diskon"/>
+                                </then>
+                                <else>
+                                    <assign variable="diskon" expression="0"/>
+                                    <assign variable="hargatotal" expression="totalbelanja-diskon"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Diskon = Rp. &quot; &amp;diskon" newline="True"/>
+            <output expression="&quot;Harga Total = Rp. &quot; &amp;hargatotal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

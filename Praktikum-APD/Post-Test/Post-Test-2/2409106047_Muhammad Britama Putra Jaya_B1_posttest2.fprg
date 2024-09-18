@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2409106047_Muhammad Britama Putra Jaya_B1_posttest2"/>
+        <attribute name="authors" value="my asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-18 09:47:21 AM"/>
+        <attribute name="created" value="bXkgYXN1cztCUklUQU1BOzIwMjQtMDktMTc7MDg6NDU6NDYgUE07MjUxNA=="/>
+        <attribute name="edited" value="bXkgYXN1cztCUklUQU1BOzIwMjQtMDktMTg7MDk6NDc6MjEgQU07MjsyNjA1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Masukkan Nama : &quot;" newline="True"/>
+            <declare name="Nama" type="String" array="False" size=""/>
+            <input variable="Nama"/>
+            <declare name="JenisKelamin" type="Boolean" array="False" size=""/>
+            <output expression="&quot;Apakah Anda Pria? (True/False)&quot;" newline="True"/>
+            <input variable="JenisKelamin"/>
+            <output expression="&quot;Masukkan Umur : &quot;" newline="True"/>
+            <declare name="Umur" type="Integer" array="False" size=""/>
+            <input variable="Umur"/>
+            <output expression="&quot;Masukkan Tinggi Badan : &quot;" newline="True"/>
+            <declare name="Tinggi" type="Real" array="False" size=""/>
+            <input variable="Tinggi"/>
+            <output expression="&quot;Masukkan Berat Badan : &quot;" newline="True"/>
+            <declare name="Berat" type="Real" array="False" size=""/>
+            <input variable="Berat"/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <assign variable="total" expression="Umur + Tinggi + Berat"/>
+            <if expression="JenisKelamin">
+                <then>
+                    <output expression="&quot;====================&quot;&amp;&#13;&#10;ToChar(13)&amp;&#13;&#10;&quot;Biodata&quot;&amp;&#13;&#10;ToChar(13)&amp;&#13;&#10;&quot;====================&quot;&amp;&#13;&#10;ToChar(13)&amp;&#13;&#10;&quot;Nama &quot;&amp;&quot;: &quot;&amp;Nama&amp;&#13;&#10;ToChar(13)&amp;&#13;&#10;&quot;Umur &quot;&amp;&quot;: &quot;&amp;Umur&amp;&#13;&#10;ToChar(13)&amp;&#13;&#10;&quot;Tinggi Badan &quot;&amp;&quot;: &quot;&amp;Tinggi&amp;&quot; cm&quot;&amp;&#13;&#10;ToChar(13)&amp;&#13;&#10;&quot;Berat Badan &quot;&amp;&quot;: &quot;&amp;Berat&amp;&quot; kg&quot;&amp;&#13;&#10;ToChar(13)&amp;&#13;&#10;&quot;Jenis Kelamin : Pria&quot;&amp;&#13;&#10;ToChar(13)&amp;&#13;&#10;&quot;====================&quot;&amp;&#13;&#10;ToChar(13)&amp;&#13;&#10;&quot;Jumlah Variabel &quot;&amp;&quot;: &quot;&amp;total" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;====================&quot;&amp;&#13;&#10;ToChar(13)&amp;&#13;&#10;&quot;Biodata&quot;&amp;&#13;&#10;ToChar(13)&amp;&#13;&#10;&quot;====================&quot;&amp;&#13;&#10;ToChar(13)&amp;&#13;&#10;&quot;Nama &quot;&amp;&quot;: &quot;&amp;Nama&amp;&#13;&#10;ToChar(13)&amp;&#13;&#10;&quot;Umur &quot;&amp;&quot;: &quot;&amp;Umur&amp;&#13;&#10;ToChar(13)&amp;&#13;&#10;&quot;Tinggi Badan &quot;&amp;&quot;: &quot;&amp;Tinggi&amp;&quot; cm&quot;&amp;&#13;&#10;ToChar(13)&amp;&#13;&#10;&quot;Berat Badan &quot;&amp;&quot;: &quot;&amp;Berat&amp;&quot; kg&quot;&amp;&#13;&#10;ToChar(13)&amp;&#13;&#10;&quot;Jenis Kelamin : Wanita&quot;&amp;&#13;&#10;ToChar(13)&amp;&#13;&#10;&quot;====================&quot;&amp;&#13;&#10;ToChar(13)&amp;&#13;&#10;&quot;Jumlah Variabel &quot;&amp;&quot;: &quot;&amp;total" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
