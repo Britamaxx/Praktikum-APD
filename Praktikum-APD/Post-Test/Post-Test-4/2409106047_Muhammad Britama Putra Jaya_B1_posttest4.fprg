@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2409106047_Muhammad Britama Putra Jaya_B1_posttest3"/>
+        <attribute name="authors" value="my asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-02 07:05:27 PM"/>
+        <attribute name="created" value="bXkgYXN1cztCUklUQU1BOzIwMjQtMDktMjI7MTI6Mjc6MjAgUE07MjQ5Nw=="/>
+        <attribute name="edited" value="bXkgYXN1cztCUklUQU1BOzIwMjQtMTAtMDI7MDc6MDU6MjcgUE07NjsyNjA3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="menu, username, password, percobaan" type="String" array="False" size=""/>
+            <declare name="kesempatan" type="Integer" array="False" size=""/>
+            <declare name="panjangsisi, lebarsisi, keliling, luas, jarijari" type="Real" array="False" size=""/>
+            <assign variable="kesempatan" expression="3"/>
+            <while expression="kesempatan &gt; 0">
+                <output expression="&quot;Masukkan Username : &quot;" newline="True"/>
+                <input variable="username"/>
+                <output expression="&quot;Masukkan Password : &quot;" newline="True"/>
+                <input variable="password"/>
+                <if expression="username == &quot;Tama&quot; &amp;&amp; password == &quot;047&quot;">
+                    <then>
+                        <assign variable="percobaan" expression="&quot;tidak&quot;"/>
+                        <while expression="percobaan = &quot;tidak&quot;">
+                            <output expression="&quot;Login Berhasil!&quot;" newline="True"/>
+                            <output expression="&quot;Menu Menghitung Keliling/Luas Bangun Datar : &quot;&amp;&#13;&#10;ToChar(13)&amp;&quot;(Pilih Salah Satu)&quot;&amp;&#13;&#10;ToChar(13)&amp;&quot;1. Keliling Persegi&quot;&amp;&#13;&#10;ToChar(13)&amp;&quot;2. Luas Persegi&quot;&amp;&#13;&#10;ToChar(13)&amp;&quot;3. Keliling Persegi Panjang&quot;&amp;&#13;&#10;ToChar(13)&amp;&quot;4. Luas Persegi Panjang&quot;&amp;&#13;&#10;ToChar(13)&amp;&quot;5. Keliling Lingkaran&quot;&amp;&#13;&#10;ToChar(13)&amp;&quot;6. Luas Lingkaran&quot;" newline="True"/>
+                            <input variable="menu"/>
+                            <assign variable="percobaan" expression="&quot;tidak&quot;"/>
+                            <if expression="menu == &quot;1&quot;">
+                                <then>
+                                    <while expression="percobaan == &quot;tidak&quot;">
+                                        <output expression="&quot;Masukkan Panjang Sisi : &quot;" newline="True"/>
+                                        <input variable="panjangsisi"/>
+                                        <assign variable="keliling" expression="panjangsisi*4"/>
+                                        <output expression="&quot;Keliling Persegi adalah &quot;&amp;keliling&amp;&quot; cm&quot;" newline="True"/>
+                                        <output expression="&quot;Kemabali ke menu utama? Ya/Tidak&quot;" newline="True"/>
+                                        <input variable="percobaan"/>
+                                    </while>
+                                </then>
+                                <else>
+                                    <if expression="menu == &quot;2&quot;">
+                                        <then>
+                                            <while expression="percobaan == &quot;tidak&quot;">
+                                                <output expression="&quot;Masukkan Panjang Sisi : &quot;" newline="True"/>
+                                                <input variable="panjangsisi"/>
+                                                <assign variable="luas" expression="panjangsisi^2"/>
+                                                <output expression="&quot;Luas Persegi adalah &quot;&amp;luas&amp;&quot; cm^2&quot;" newline="True"/>
+                                                <output expression="&quot;Kemabali ke menu utama? Ya/Tidak&quot;" newline="True"/>
+                                                <input variable="percobaan"/>
+                                            </while>
+                                        </then>
+                                        <else>
+                                            <if expression="menu == &quot;3&quot;">
+                                                <then>
+                                                    <while expression="percobaan == &quot;tidak&quot;">
+                                                        <output expression="&quot;Masukkan Panjang : &quot;" newline="True"/>
+                                                        <input variable="panjangsisi"/>
+                                                        <output expression="&quot;Masukkan Lebar : &quot;" newline="True"/>
+                                                        <input variable="lebarsisi"/>
+                                                        <assign variable="keliling" expression="panjangsisi*2+lebarsisi*2"/>
+                                                        <output expression="&quot;Keliling Persegi Panjang adalah &quot;&amp;keliling&amp;&quot; cm&quot;" newline="True"/>
+                                                        <output expression="&quot;Kemabali ke menu utama? Ya/Tidak&quot;" newline="True"/>
+                                                        <input variable="percobaan"/>
+                                                    </while>
+                                                </then>
+                                                <else>
+                                                    <if expression="menu == &quot;4&quot;">
+                                                        <then>
+                                                            <while expression="percobaan == &quot;tidak&quot;">
+                                                                <output expression="&quot;Masukkan Panjang : &quot;" newline="True"/>
+                                                                <input variable="panjangsisi"/>
+                                                                <output expression="&quot;Masukkan Lebar : &quot;" newline="True"/>
+                                                                <input variable="lebarsisi"/>
+                                                                <assign variable="luas" expression="panjangsisi*lebarsisi"/>
+                                                                <output expression="&quot;Luas Persegi Panjang adalah &quot;&amp;luas&amp;&quot; cm^2&quot;" newline="True"/>
+                                                                <output expression="&quot;Kemabali ke menu utama? Ya/Tidak&quot;" newline="True"/>
+                                                                <input variable="percobaan"/>
+                                                            </while>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="menu == &quot;5&quot;">
+                                                                <then>
+                                                                    <while expression="percobaan == &quot;tidak&quot;">
+                                                                        <output expression="&quot;Masukkan Jari-Jari : &quot;" newline="True"/>
+                                                                        <input variable="jarijari"/>
+                                                                        <assign variable="keliling" expression="2*22/7*jarijari"/>
+                                                                        <output expression="&quot;Keliling Lingkaran adalah &quot;&amp;keliling&amp;&quot; cm&quot;" newline="True"/>
+                                                                        <output expression="&quot;Kemabali ke menu utama? Ya/Tidak&quot;" newline="True"/>
+                                                                        <input variable="percobaan"/>
+                                                                    </while>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="menu == &quot;6&quot;">
+                                                                        <then>
+                                                                            <while expression="percobaan == &quot;tidak&quot;">
+                                                                                <output expression="&quot;Masukkan Jari-Jari : &quot;" newline="True"/>
+                                                                                <input variable="jarijari"/>
+                                                                                <assign variable="luas" expression="22/7*jarijari^2"/>
+                                                                                <output expression="&quot;Luas Lingkaran adalah &quot;&amp;luas&amp;&quot; cm^2&quot;" newline="True"/>
+                                                                                <output expression="&quot;Kemabali ke menu utama? Ya/Tidak&quot;" newline="True"/>
+                                                                                <input variable="percobaan"/>
+                                                                            </while>
+                                                                        </then>
+                                                                        <else>
+                                                                            <output expression="&quot;Menu Tidak Tersedia :)&quot;" newline="True"/>
+                                                                        </else>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </while>
+                    </then>
+                    <else>
+                        <assign variable="kesempatan" expression="kesempatan - 1"/>
+                        <output expression="&quot;Username atau password salah!&quot;" newline="True"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
